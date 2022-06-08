@@ -11,7 +11,7 @@ obj.__index = obj
 obj.name = "WindowScreenMove"
 obj.version = "0.1"
 obj.author = "Moore Huang <moore.hy@qq.com>"
-obj.homepage = "https://github.com/littlemo/WindowScreenMove"
+obj.homepage = "https://github.com/littlemo/Spoons"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
 
 --- WindowScreenMove.logger
@@ -103,8 +103,10 @@ obj.oneScreenDown  = hs.fnutils.partial(obj.moveCurrentWindowToScreen, "down")
 ---   * screen_left, screen_right, screen_up, screen_down - move the window to the left/right/up/down screen (if you have more than one monitor connected, does nothing otherwise)
 function obj:bindHotkeys(mapping)
    local hotkeyDefinitions = {
-      screen_left = self.oneScreenLeft,
+      screen_left  = self.oneScreenLeft,
       screen_right = self.oneScreenRight,
+      screen_up    = self.oneScreenUp,
+      screen_down  = self.oneScreenDown,
    }
    hs.spoons.bindHotkeysToSpec(hotkeyDefinitions, mapping)
    return self
