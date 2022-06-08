@@ -3405,6 +3405,35 @@
     "type": "Method"
   },
   {
+    "desc": "Move windows to other screens",
+    "name": "WindowScreenMove",
+    "type": "Module"
+  },
+  {
+    "desc": "Length of the animation to use for the window movements across the",
+    "module": "WindowScreenMove",
+    "name": "animationDuration",
+    "type": "Variable"
+  },
+  {
+    "desc": "Table containing a sample set of hotkeys that can be",
+    "module": "WindowScreenMove",
+    "name": "defaultHotkeys",
+    "type": "Variable"
+  },
+  {
+    "desc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+    "module": "WindowScreenMove",
+    "name": "logger",
+    "type": "Variable"
+  },
+  {
+    "desc": "Binds hotkeys for WindowScreenMove",
+    "module": "WindowScreenMove",
+    "name": "bindHotkeys",
+    "type": "Method"
+  },
+  {
     "desc": "Assign every window and empty rectangle a sigil for quick access.",
     "name": "WindowSigils",
     "type": "Module"
